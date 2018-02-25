@@ -1,2 +1,2 @@
-MongoDB/data/
-MySQL/db_data/
+MongoDB/data/*
+MySQL/db_data/*
