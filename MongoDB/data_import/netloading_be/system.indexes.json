@@ -1,0 +1,16 @@
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.admins" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.albums" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.carempties" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.cars" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.contacts" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.customers" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.drivers" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.feedbacks" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.histories" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.notices" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.options" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.orders" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.requests" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.slugs" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.transfers" }
+{ "v" : 1, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "netloading.videos" }

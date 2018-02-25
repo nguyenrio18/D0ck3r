@@ -1,18 +1,19 @@
 version: '3'
 
 services:
-   db:
-     image: mysql:latest
-     ports:
-       - "3306:3306"
-     volumes:
-       - db_data:/var/lib/mysql
-     restart: always
-     environment:
-       MYSQL_ROOT_PASSWORD: somewordpress
-       MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
+  mysqldb:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    volumes:
+    #  - db_data:/var/lib/mysql
+      - ./db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: konbini
+      MYSQL_USER: konbini
+      MYSQL_PASSWORD: konbini
 
-volumes:
-    db_data:
+# volumes:
+#     db_data:
