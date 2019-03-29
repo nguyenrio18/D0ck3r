@@ -2,7 +2,7 @@ version: '3'
 
 services:
   redis:
-    image: redis #:4.0.5-alpine
+    image: redis:latest
     command: ["redis-server", "--appendonly", "yes"]
     ports:
       - "6379:6379"
@@ -10,7 +10,7 @@ services:
     # networks:
     #   - redis-net
     volumes:
-      - /Volumes/data/DEV/tmp_Docker/Redis/data:/data
+      - /Volumes/data/DEV/Docker/tmpDrive/Redis/data:/data
 
 # networks:
 #   redis-net:
