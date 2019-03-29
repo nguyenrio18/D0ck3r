@@ -1,0 +1,1 @@
+https://mindbyte.nl/2018/04/05/run-rabbitmq-using-docker-compose-with-guest-user.html
