@@ -1,18 +1,39 @@
-version: '3.1'
-
-volumes:
-  database_data:
-    driver: local
+version: '3.5'
 
 services:
-  postgresdb:
-    image: postgres:latest
-    restart: always
+  postgres:
+    container_name: postgres_container
+    image: postgres
     environment:
-      POSTGRES_DB: workhub
-      POSTGRES_USER: nluser
-      POSTGRES_PASSWORD: ToilaNguyen86
-    ports:
-      - 5432:5432
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      PGDATA: /data/postgres
     volumes:
-      - database_data:/var/lib/postgresql/data
+       - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+  
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-admin@test.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+    volumes:
+       - pgadmin:/root/.pgadmin
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+    postgres:
+    pgadmin:
