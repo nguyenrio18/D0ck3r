@@ -10,7 +10,7 @@ services:
     # networks:
     #   - redis-net
     volumes:
-      - /Volumes/data/DEV/Docker/tmpDrive/Redis/data:/data
+      - ../tmpDrive/Redis/data:/data
 
 # networks:
 #   redis-net:
